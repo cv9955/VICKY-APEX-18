@@ -1,0 +1,8 @@
+"ID","ESTADO","STYLE"
+"-1","FUERA DE USO","#e74c3c"
+"1","DISEÑO","#f4d03f"
+"2","SIN REVISAR","#f5b041"
+"3","GUARDADO","#52be80"
+"4","FIRMADO","#3498db"
+"5","EN PRODUCCION","#af7ac5"
+"6","USO INTERNO","#CCCCCC"
