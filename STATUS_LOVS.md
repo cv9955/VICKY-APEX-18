@@ -17,12 +17,12 @@
 * CLI_DEPOSITO
 * CLI_GRUPOS
 
-|VALOR|DISPLAY|
-|-|-|
-|0|SIN DEFINIR|
-|1|ACTIVO|
-|2|DEFAULT|
-|-1|INACTIVO|
+|VALOR|DISPLAY|ICON_CLASS|
+|-|-|-|
+|0|SIN DEFINIR|fam-minus fam-is-disabled|
+|1|ACTIVO|fam-check fam-is-success|
+|2|DEFAULT|fam-heart fam-is-info|
+|-1|INACTIVO|fam-x fam-is-danger|
 
 ## BOBINAS.STATUS
 |VALOR|DISPLAY|
