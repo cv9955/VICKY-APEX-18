@@ -12,14 +12,16 @@
 - 108 Stock
 - 109 Entregas
 - 111 Cuentas
-  - 121 DFiscal_ABM
-  - 122 Cuentas_ABM
+  - 121 Cli_DFiscal_ABM
+  - 123 Cli_DFiscal_CC
+  - 122 Cli_Cuentas_ABM
+  - 124 Cli_Cuentas_CC
 - 112 Cheques
 - 115 Grupos
-  - 119 Grupos_ABM
+  - 119 Art_Grupos_ABM
 - 114 Info
-  - 117 Contactos_ABM
-  - 116 Depositos_ABM
+  - 117 Cli_Contacto_ABM
+  - 116 Cli_Deposito_ABM
   
 ## Articulos
 - 102 Buscar_Articulo
