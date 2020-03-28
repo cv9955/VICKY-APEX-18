@@ -21,7 +21,8 @@ BEGIN
 END;
 ```
 ### Trigger revisados
-- [ ] CLIENTES    
+- [x] CLIENTES_TRG 
+- [x] CLIENTES-TRG_UPDATE
 - [ ] CLI_CUENTAS 
 - [ ] CLI_DFISCAL   **CLI_CUENTAS_SEQ**
 - [ ] CLI_CONTACTOS  
