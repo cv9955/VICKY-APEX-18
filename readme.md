@@ -1,4 +1,4 @@
-# VICKY-APEX-18
+# VICKY2020
 
 ## Sql 
 - BOBINAS.sql
@@ -10,10 +10,10 @@
 - Packages
 - img
 
-## Apex
+## Page Groups
 - Main
-- 100 Empresas
-- 200 Articulos
+- 10 Clientes
+- 100 Articulos
 - 300 Bobinas
 - 400 Compras
 - 500 Ventas
