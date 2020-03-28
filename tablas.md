@@ -7,7 +7,7 @@
 |created|D|||||
 |created_by|VC20||||
 |updated|D||||
-|updated_by|VC 20||||
+|updated_by|VC20||||
 |||||||
 
 ## PLANTILLA 2
@@ -15,16 +15,16 @@
 |-|-|-|-|-|
 |ID|N|X|seq|**PK**|
 |CLIENTE_ID|N|X||**FK**|
-|TITLE|VC20|X|||
-|DESCRIPTION|VC80||||
-|ICON_CLASS|VC20|||fa-user fa-lg|
-|ICON_HTML|VC20||||
+|TITLE|VC50|X|||
+|DESCRIPTION|VC200||||
+|ICON_CLASS|VC50|||fa-user fa-lg|
+|ICON_HTML|VC50||||
 |NOTAS|BLOB|||rich textbox|
 |STATUS|N|X|1|**STATUS_LOV**|
 |created|D|||||
 |created_by|VC20||||
 |updated|D||||
-|updated_by|VC 20||||
+|updated_by|VC20||||
 |||||||
 
 ARTICULOS
