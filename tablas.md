@@ -11,15 +11,15 @@
 |||||||
 
 ## PLANTILLA 2
-|CAMPO|TIPO|NOT NULL|DEFAULT|NOTAS|
+|CAMPO|TIPO|NOT NULL|DEFAULT|NOTAS ejemplo|
 |-|-|-|-|-|
 |ID|N|X|seq|**PK**|
 |CLIENTE_ID|N|X||**FK**|
 |TITLE|VC20|X|||
 |DESCRIPTION|VC80||||
-|ICON_CLASS|VC20||||
+|ICON_CLASS|VC20|||fa-user fa-lg|
 |ICON_HTML|VC20||||
-|NOTAS|BLOB||||
+|NOTAS|BLOB|||rich textbox|
 |STATUS|N|X|1|**STATUS_LOV**|
 |created|D|||||
 |created_by|VC20||||
