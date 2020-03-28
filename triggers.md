@@ -23,8 +23,8 @@ END;
 ### Trigger revisados
 - [x] CLIENTES_TRG 
 - [x] CLIENTES-TRG_UPDATE
-- [ ] CLI_CUENTAS 
-- [ ] CLI_DFISCAL   **CLI_CUENTAS_SEQ**
+- [x] CLI_CUENTAS 
+- [x] CLI_DFISCAL   **CLI_CUENTAS_SEQ**
 - [ ] CLI_CONTACTOS  
 - [x] CLI_DEPOSITOS
 - [x] CLI_GRUPOS 
