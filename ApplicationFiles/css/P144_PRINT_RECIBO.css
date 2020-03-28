@@ -1,0 +1,106 @@
+@media screen{
+	.imagen {    display: block;   }  
+}
+
+@media print{
+	.imagen 	{	display: none;  }   	
+	.screenOnly {	display: none;	}
+	header nav, footer {display: none;}
+	t_Header  {	display: none;	} 
+}   
+
+.encabezado {
+		position : fixed;
+		top:  12mm;
+		left: 3mm;
+		width:190mm;
+	}	
+
+	.nro_recibo {
+		position : fixed;
+		top:   23mm;
+		left: 130mm;
+		font-weight: bold;
+		font-size: x-large;	
+	}
+
+	.fecha {
+		position : fixed;
+		top: 39mm;
+		font-weight: bold;
+	    font-size: x-large;
+	}
+	.dia {	left:128mm;}
+	.mes {	left:147mm;}
+	.ano {	left:166mm;}
+
+	.cliente {
+		position : fixed;
+		font-weight: bold;
+	}
+	.rsocial 	{	top: 62mm; left:30mm;}	
+	.direccion 	{	top: 68mm; left:22mm;}	
+	.localidad 	{	top: 68mm; left:110mm;}	
+	.iva 		{	top: 74mm; left:22mm;}	
+	.cuit 		{	top: 74mm; left:125mm;}	
+
+.facturas {
+	display: grid;
+	position: fixed;
+	top :92mm;
+	left : 8mm;
+	grid-template-columns: 17mm 19mm 17mm auto;
+    grid-row-gap: 1.6mm;
+	
+}
+.total_facturas {
+		position : fixed;
+		font-weight: bold;
+		top: 158mm; 
+		left:61mm;
+		}	
+		
+
+.total_en_letras {
+    position: fixed;
+    font-weight: bold;
+    top: 175mm;
+    left: 6mm;
+    width: 74mm;
+    text-indent: 56mm;
+    line-height: 8mm;
+}
+		
+.cheques {
+	display: grid;
+	position: fixed;
+	top :94mm;
+	left : 83mm;
+	grid-template-columns: 19mm 45mm 20mm auto;
+    grid-row-gap: 1.6mm;
+}		
+
+.totales{
+		position : fixed;
+		font-weight: bold;
+		left:167mm;
+		}	
+		
+.efectivo { top : 213mm;}
+
+.deposito {
+	left:130mm !important;
+	top : 213mm;}
+	
+.compensacion { top : 241mm;}
+.GANANCIAS { top : 227mm;}
+.IVA { top : 220mm;}
+.PATRONALES { top : 241mm;}
+.IIBB { top : 234mm;}
+	
+.total_valores {
+		position : fixed;
+		font-weight: bold;
+		top: 262mm; 
+		left:166mm;
+		}		

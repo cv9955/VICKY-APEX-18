@@ -1,0 +1,144 @@
+@page {
+    size: A4; 
+    margin-top: 12mm;
+    margin-bottom:0;
+ }
+ 
+@media screen{
+	.imagen {    display: block;   }  
+	.t-Body-title {	display: none;	} 
+}
+
+@media print{
+	.imagen 	{	display: none;  }   	
+	.screenOnly {	display: none;	}
+	header nav, footer {display: none;}
+	.t_Header  {	
+		display: none;	
+		background : none;
+		
+	} 
+	.t-Body-title {	display: none;	} 
+}   
+
+.encabezado {
+    position: fixed;
+    top: 10mm;
+    left: 4mm;
+    width: 185mm;
+}
+
+.nro_recibo {
+	position : fixed;
+	top:   21mm; 
+	left: 128mm;
+	font-weight: bold;
+	font-size: x-large;	
+}
+
+.fecha {
+	position : fixed;
+	top: 37mm;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.dia {	left:128mm;}
+.mes {	left:145mm;}
+.ano {	left:162mm;}
+
+.cliente {
+	position : fixed;
+	font-weight: bold;
+}
+.rsocial 	{	top: 58mm; left:40mm;}	
+.direccion 	{	top: 64mm; left:35mm;}	
+.localidad 	{	top: 70mm; left:35mm;}	
+.cuit 		{	top: 64mm; left:140mm;}	
+.iva 		{	
+	top: 70mm;
+	left:140mm;
+	font-size: smaller;
+}		
+.total_en_letras {
+    position: fixed;
+    font-weight: bold;
+    top: 80mm;
+    left: 15mm;
+    width: 160mm;
+    text-indent: 48mm;
+    line-height: 6mm;
+	font-size: large;
+}
+
+.facturas {
+	display: grid;
+	position: fixed;
+	top :108mm;
+	left : 11mm;
+	grid-template-columns: 22mm 20mm 28mm;
+    grid-row-gap: 1.6mm;
+	
+}
+
+.total_facturas {
+	position : fixed;
+	font-weight: bold;
+	top: 188mm; 
+	left : 53mm;
+	width: 27mm;
+	text-align:right;
+}	
+		
+		
+.grid-title {
+	text-align:center;
+	font-weight: bold;	
+	border-bottom: 1px solid;
+}
+
+.grid-fecha {
+	text-align:center;
+}
+.grid-texto {
+	text-align:left;
+}
+.grid-valor {
+	text-align:right;
+}	
+
+
+.cheques {
+    display: grid;
+    position: fixed;
+    top: 108mm;
+    left: 84mm;
+    grid-template-columns: 25mm 35mm 16mm 24mm;
+    grid-row-gap: 1.6mm;
+}	
+
+.retenciones {
+    display: grid;
+    position: fixed;
+    top: 230mm;
+    left: 84mm;
+    grid-template-columns: 60mm 40mm;
+    grid-row-gap: 1.6mm;
+}		
+
+.totales{
+	position : fixed;
+	font-weight: bold;
+	left:167mm;
+}	
+		
+	
+.total_valores {
+	position : fixed;
+	font-size: large;
+	font-weight: bold;
+	top: 255mm; 
+	left: 155mm;
+	width: 30mm;
+	text-align:right;
+}	

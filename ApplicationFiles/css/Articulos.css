@@ -1,0 +1,230 @@
+.art_3 {background-color : #d7ccc899 	!important}
+.art_2 {background-color : #cfd8dc99 	!important}
+.art_1 {background-color : #e0e0e099 	!important} 
+
+.art_estado1 {color: #f4d03f }
+.art_estado2 {color: #f5b041 }
+.art_estado3 {color: #67bb64; font-weight: bold;}
+.art_estado4 {color: #1a78b7; font-weight: bold;}
+.art_estado5 {color: #af7ac5 }
+.art_estado6 {color: #CCCCCC }
+.art_estado-1{color: #e74c3c; text-decoration: line-through solid red;}
+
+.medida_plancha	{
+    background-color: #98fb9899 !important;
+    font-weight: bold;
+    text-align: CENTER;
+}
+.medida_caja	{
+	background-color : #afeeee99 	!important;
+    font-weight: bold;
+    text-align: CENTER;
+	font-style:italic;
+	white-space:NOWRAP;
+}
+
+.stock_pedido {
+	text-align:CENTER;
+	background-color :  beige!important	;
+	font-weight:500;
+	font-size : 1.1em;
+}
+
+.stock_afabri {
+	text-align:CENTER;
+	background-color :  beige!important	;
+	font-weight:500;
+	font-size : 1.1em;
+	color : blue;
+}
+
+.stock_plancha 	{
+	text-align:center;
+	background-color : #68e27033 !important;
+	color:green !important;
+	font-weight:700;
+	font-family: verdana;
+	}
+	
+	
+.stock_plancha	a{
+	color: maroon !important;
+	font-weight:600;
+	font-family: verdana;
+	}	
+	
+.stock_caja		{
+	background-color : #CBEBF580 !important;
+	text-align:center;
+	}
+	
+.stock_caja	a{
+	color: #6a6898 !important;
+	font-family: verdana;
+	}
+	
+.stock_produccion		{
+	background-color : #f4cbf580 !important;
+	text-align:center;
+	font-family: verdana;
+	}	
+	
+.stock_produccion	a{
+	color: #b92d91 !important;
+	font-weight:bold;
+	}
+	
+.stock_negativo	{
+	background-color : #ab04630d !important;
+	font-weight:bold;
+	text-align:center;
+	font-family: verdana;
+	}	
+	
+.stock_negativo a{
+	color:#d369e0 !important;
+}
+.stock_sin_contar	{
+	background-color : #045fab05 !important;
+	font-weight:bold;
+	text-align:center;
+	font-family: verdana;
+	}	
+	
+.stock_sin_contar a{
+	color:#645680 !important;
+}
+
+.stock_terminado		{
+	background-color : #84fbff80 !important;
+	color:#1560c7 !important;
+	font-weight:bold;
+	text-align:center;
+	font-family: verdana;
+}	
+
+.stock_terminado a {
+	color:#1516c7 ;
+}	
+	
+	
+.precio_status_1{
+	color: LIMEGREEN !important;
+	font-weight:700;
+	font-size : 1.1em;
+	font-family:Verdana;
+}	
+
+.precio_status_2{
+	color: silver !important;
+	font-family:verdana;
+}
+.precio_status_3{
+	color: DARKKHAKI !important;
+	font-family:verdana;
+}
+
+.precio_status_4{
+	color: ORANGE !important;
+	font-weight:700;
+	font-size : 1.1em;
+	font-family:Verdana;
+}	
+	
+.contado_ok{
+	font-weight:bold;
+	text-align:right;
+	color:black !important;	
+	background-color : #98D7EA !important
+}
+.sin_contar	{
+	font-style:italic;
+	font-weight:bold;
+	text-align:right;
+	color:black !important;
+	background-color : #CBEBF5 !important
+}
+.sin_terminar	{
+	font-weight:bold;
+	text-align:left;
+	color:#626567 !important;	
+	background-color : #CBEBF5 !important
+}
+
+
+.calculo{
+	background-color : Lavender!important;
+	color:Green	!important;
+	font-weight:bold;
+    text-align: CENTER;
+}
+
+.col-id{
+	background-color : #e0e0b766 !important;
+	font-size : 1.2em;	
+	font-weight:700;
+    text-align: CENTER;	
+}
+
+.col-cliente {
+	font-weight: 600;
+    text-align: left;
+    font-family:verdana;
+	}	
+	
+.col-codigo {
+	font-weight: 600;
+    text-align: left;
+    font-family:verdana;
+	}
+	
+.col-calidad{
+	font-weight: 400;
+    text-align: center;
+    font-size : 1.1em;
+}
+
+.col-metros{
+	font-weight: 400;
+    text-align: right;
+    font-size : 1.1em;
+}
+
+.obs{
+    WORD-SPACING: 4px;
+    color: darkred;
+    margin: 5px;
+    background-color: #fff2009e;
+    FONT-FAMILY: ARIAL;
+    FONT-SIZE: .9EM;
+    FONT-WEIGHT: 300;
+}
+
+.KRAFT	{
+	background-color : #eeef4766 !important;
+	color:#404040	!important;
+}
+.LINNER	{
+	background-color : #F7DC6Fd0 !important;
+	color:#AF601A	!important;
+}
+.MISIO	{
+	background-color: #F0B27A99 !important;
+	color:#944600	!important;
+}
+.BLANCO	{
+	background-color : #FBFCFC !important;
+	color:#31B0D5 !important;
+}
+.DT	{
+	font-style:italic;
+	color:#3136d0 !important;
+	font-size:  1em; 
+}
+#LOGO_CLIENTE {
+	max-width: 300px;
+    max-height: 100px;
+    POSITION: fixed;
+    RIGHT: 20px;
+    TOP: 40px;
+}

@@ -1,0 +1,40 @@
+
+.col-cantidad {
+	font-weight: 600;
+    text-align: center;
+    font-family:verdana;
+	background-color : #efcb6230 !important;
+    border-right: black 1px solid;
+	}	
+		
+	
+.pedido_PENDIENTE {
+	color : #4f42b3 		!important;
+	background-color : #6cf5f330 		!important;
+	font-weight: 700;
+	}
+		
+.pedido_SUSPENDIDO {
+	color : #b34242 		!important;
+	background-color : #cae457ba 		!important;
+	font-weight: 700;
+	}
+
+.pedido_COMPLETO   		{
+	color : #0f842b	!important;
+	font-weight: 700;
+	background-color : #7fe8aa82 !important;
+}	
+	
+			
+.pedido_corrugado_parcial 	{	color : #ffa87a	!important;	}
+
+.pedido_en_corrugadora 		{	color : #58e45c	!important;	}
+.pedido_en_produccion  		{	color : #05ab4f	!important;	}
+
+
+.pedido_terminado_parcial  	{	color : darkturquoise	!important;	}
+.pedido_listo		   		{	color : BLUE	!important;	}
+.pedido_entrega_parcial		{	color : GREEN	!important;	}
+
+

@@ -1,0 +1,78 @@
+@page {
+    size: A4; 
+    margin-top: 12mm;
+    margin-bottom:0;
+ }
+
+@media screen{
+	.imagen {    display: block;   }  
+}
+
+@media print{
+	.imagen 	{	display: none;  }   	
+	.screenOnly {	display: none;	}
+	header nav, footer {display: none;}
+	t_Header  {	display: none;	} 
+}   
+
+.encabezado {
+		position : fixed;
+		top:  5mm;
+		left: 3mm;
+		width:190mm;
+	}	
+
+	.nro_remito {
+		position : fixed;
+		top:   16mm;
+		left: 149mm;
+		font-weight: bold;
+		font-size: x-large;	
+	}
+
+	.fecha {
+		position : fixed;
+		top: 27mm;
+		left:137mm;
+		font-weight: bold;
+	    font-size: larger;
+	}
+
+	.cliente {
+		position : fixed;
+		font-weight: bold;
+	}
+	.rsocial 	{	top: 57mm; left:30mm;}	
+	.direccion 	{	top: 66mm; left:30mm;}	
+	.localidad 	{	top: 66mm; left:145mm;}	
+	.iva 		{	top: 76mm; left:40mm;}	
+	.cuit 		{	top: 79mm; left:125mm;font-size: larger;}	
+
+.detalle {
+    display: grid;
+    position: fixed;
+    top: 108mm;
+    left: 8mm;
+    grid-template-columns: 20mm 130mm auto;
+    grid-row-gap: 0mm;
+    grid-column-gap: 5mm;
+}
+
+.item {
+	font-weight: bold;
+}
+
+.cantidad {
+	text-align: right;
+}
+
+.entrega {
+    display: grid;
+    position: fixed;
+    top: 220mm;
+    left: 32mm;
+    grid-template-columns: 20mm 130mm;
+	font-weight: bold;
+
+}	
+
