@@ -1,9 +1,3 @@
-# SECUENCIAS
-## Plantilla 
-```sql
-CREATE SEQUENCE TABLE_NAME_SEQ INCREMENT BY 1 START WITH 1 MAXVALUE 999 MINVALUE 1 NOCACHE;
-```
-
 # Triggers
 ## Plantilla 
 ```sql
