@@ -11,6 +11,7 @@
 ## Menu Clientes  (reemplazo de 10 - Cliente_X)
 - 100 CLIENTES_Articulos  >>G_CLIENTE_ID
 - 107 CLIENTES_Pedidos
+- 133 CLIENTES_Produccion  
 - 108 CLIENTES_Stock
 - 109 CLIENTES_Entregas
 - 111 CLIENTES_Cuentas
@@ -18,10 +19,10 @@
   - 123 Cli_DFiscal_CC
   - 122 Cli_Cuentas_ABM
   - 124 Cli_Cuentas_CC
-- 112 Cli_Cheques
-- 115 Cli_Grupos
+- 112 CLIENTES_Cheques
+- 115 CLIENTES_Grupos
   - 119 Cli_Grupos_ABM
-- 114 Info
+- 114 CLIENTES_informacion
   - 117 Cli_Contacto_ABM
   - 116 Cli_Deposito_ABM
   
@@ -49,3 +50,26 @@
     - 315 PRINT_PLANILLA
 	- 316 PRINT_ETIQUETAS
 - 332 Resumen_Mensual
+
+## MENU_VENTAS
+- 7 Pedidos
+  - 8 Pedido_x
+
+- 81 Entregas (despacho)
+- Remitos 1/2
+  - 510 NUEVO_REMITO
+  - 502 Remito_x
+  - 143 PRINT_REMITO_1
+  - 145 PRINT_REMITO_2
+  - 503 REMITO_A1
+  - 504 REMITO_A2
+  - 505 FACTURA_A1
+- Detalle 1/2 
+- 201 Facturas
+  - 70 factura_x
+  - 421 422 423 424 425 wFACTURAR
+- 65 Recibos
+  - 500 recibo_x
+  - 146 PRINT_RECIBO_1
+  -     PRINT_RECIBO_2
+  
