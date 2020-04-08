@@ -55,8 +55,8 @@
 - 7 Pedidos
   - 8 Pedido_x
 
-- 81 Entregas (despacho)
-- Remitos 1/2
+- 511 Entregas (despacho)  --81
+- 520 Remitos 1/2          --81
   - 510 NUEVO_REMITO
   - 502 Remito_x
   - 143 PRINT_REMITO_1
@@ -68,8 +68,8 @@
 - 201 Facturas
   - 70 factura_x
   - 421 422 423 424 425 wFACTURAR
-- 65 Recibos
-  - 500 recibo_x
+- 540 Recibos  1/2
+  - 541 recibo_x   --500
   - 146 PRINT_RECIBO_1
   -     PRINT_RECIBO_2
   
