@@ -14,17 +14,23 @@
 - 133 CLIENTES_Produccion  
 - 108 CLIENTES_Stock
 - 109 CLIENTES_Entregas
-- 111 CLIENTES_Cuentas
+- 111 CLIENTES_Cuentas / CHEQUES
   - 121 Cli_DFiscal_ABM
   - 123 Cli_DFiscal_CC
   - 122 Cli_Cuentas_ABM
   - 124 Cli_Cuentas_CC
-- 112 CLIENTES_Cheques
 - 115 CLIENTES_Grupos
   - 119 Cli_Grupos_ABM
 - 114 CLIENTES_informacion
   - 117 Cli_Contacto_ABM
   - 116 Cli_Deposito_ABM
+
+> G_CLIENTE_ID :   
+> PAGE_CLIENTE : Guarda ultima pagina para volver
+> PAGE_CLIENTE_ID
+> PAGE_CLIENTE_TITLE 
+
+  
   
 ## Articulos
 - 102 Buscar_Articulo
@@ -32,11 +38,13 @@
 
 
 ## LISTA_MENU_INICIO
-- 101 Clientes
-- 104 Articulos
-- 57 vendedores
-- 401 provedores
-- 300 Bobinas
+- 101 CLIENTES
+- 104 ARTICULOS
+- 57  VENTAS
+- 401 COMPRAS
+- 300 BOBINAS
+- 133 PRODUCCION
+
 
 ## MENU_BOBINAS
 - 300 Stock
@@ -52,7 +60,7 @@
 - 332 Resumen_Mensual
 
 ## MENU_VENTAS
-- 7 Pedidos
+- 507 Pedidos
   - 8 Pedido_x
 
 - 511 Entregas (despacho)  --81
@@ -64,8 +72,8 @@
   - 503 REMITO_A1
   - 504 REMITO_A2
   - 505 FACTURA_A1
-- Detalle 1/2 
-- 201 Facturas
+  - 84 Detalle 1/2 
+- 530 Facturas   --201
   - 70 factura_x
   - 421 422 423 424 425 wFACTURAR
 - 540 Recibos  1/2
@@ -73,3 +81,10 @@
   - 146 PRINT_RECIBO_1
   -     PRINT_RECIBO_2
   
+## MENU_FABRI
+- 33 PEDIDOS
+- 12 FABRI
+- 13 Corrugado
+-    TERMINADO
+-   Stock
+
