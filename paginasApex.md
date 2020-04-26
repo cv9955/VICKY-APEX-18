@@ -10,8 +10,7 @@
 
 ## Menu Clientes  (reemplazo de 10 - Cliente_X)
 - 100 CLIENTES_Articulos  >>G_CLIENTE_ID
-- 107 CLIENTES_Pedidos
-- 133 CLIENTES_Produccion  
+- 107 CLIENTES_Pedidos / produccion
 - 108 CLIENTES_Stock
 - 109 CLIENTES_Entregas
 - 111 CLIENTES_Cuentas / CHEQUES
@@ -20,10 +19,10 @@
   - 122 Cli_Cuentas_ABM
   - 124 Cli_Cuentas_CC
 - 115 CLIENTES_Grupos
-  - 119 Cli_Grupos_ABM
 - 114 CLIENTES_informacion
   - 117 Cli_Contacto_ABM
   - 116 Cli_Deposito_ABM
+  - 119 Cli_Grupos_ABM
 
 > G_CLIENTE_ID :   
 > PAGE_CLIENTE : Guarda ultima pagina para volver
@@ -36,6 +35,19 @@
 - 102 Buscar_Articulo
 - 104 Lista_Articulos
 
+## MENU_ARTICULO   TARGET="ART"
+- 100 CLIENTES >> 
+- 30 ART_X
+- 31 ART_Z
+- 32 ART_COTIZ
+
+- 34 ART_IMAGEN
+- 35 ART_PALLET
+
+
+- 27 IMAGEN
+- 77 PALLETIZADO
+- 160 PRINT_ORDEN
 
 ## LISTA_MENU_INICIO
 - 101 CLIENTES
@@ -88,3 +100,6 @@
 -    TERMINADO
 -   Stock
 
+## BR_CLIENTE
+- 
+  -
