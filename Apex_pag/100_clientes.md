@@ -2,39 +2,39 @@
 
 ## PAGINAS 
 
-### [101	BUSCAR_CLIENTE](#101) 
+### [101-BUSCAR_CLIENTE](#101) 
 
-### [100	CLIENTES_ARTICULOS](#101)
+### [100-CLIENTES_ARTICULOS](#101)
 
-### [111	CLIENTES_CTACTE](#101)
+### [111-CLIENTES_CTACTE](#101)
 
-### [124	CLIENTES_CUENTAS](#101)
+### [124-CLIENTES_CUENTAS](#101)
 
-### [123	CLIENTES_DFISCAL](#101)
+### [123-CLIENTES_DFISCAL](#101)
 
-### [109	CLIENTES_ENTREGAS](#101)
+### [109-CLIENTES_ENTREGAS](#101)
 
-### [114	CLIENTES_INFO](#101)
+### [114-CLIENTES_INFO](#101)
 
-### [103	CLIENTES_MAPA](#101)
+### [103-CLIENTES_MAPA](#101)
 
-### [120	CLIENTES_NUEVO](#101)
+### [120-CLIENTES_NUEVO](#101)
 
-### [107	CLIENTES_PEDIDOS](#101)
+### [107-CLIENTES_PEDIDOS](#101)
 
-### [108	CLIENTES_STOCK](#101)
+### [108-CLIENTES_STOCK](#101)
 
-### [117	CLI_CONTACTOS_ABM](#101)
+### [117-CLI_CONTACTOS_ABM](#101)
 
-### [122	CLI_CUENTAS_ABM](#101)
+### [122-CLI_CUENTAS_ABM](#101)
 
-### [116	CLI_DEPOSITOS_ABM](#101)
+### [116-CLI_DEPOSITOS_ABM](#101)
 
-### [121	CLI_DFISCAL_ABM](#101)
+### [121-CLI_DFISCAL_ABM](#101)
 
-### [119	CLI_GRUPOS_ABM](#101)
+### [119-CLI_GRUPOS_ABM](#101)
 
-### [106	VENDEDOR](#101)
+### [106-VENDEDOR](#101)
 
 ## MENU
 * [CLIENTES](#101)
@@ -53,5 +53,30 @@ HERO_CLIENTES
 
 > PAGE_CLIENTE_TITLE 
 
-# 101 BUSCAR_CLIENTE
+# 101-BUSCAR_CLIENTE
+> TITLE : CLIENTES
+> MENU_INICIO >Menu Principal
+> REGION : CLIENTES
+'''SQL
+SELECT ID,ALIAS , TAGS, 
+    NOMBRE title,
+    VENDEDOR_ID description,
+    OBS misc,
+    STATUS ,
+    aj_comision , 
+    aj_cotiz,
+    1 ACTIONS,
+    CASE STATUS 
+        WHEN -1 THEN 'fa fa-lg fa-minus-circle-o' 
+        WHEN 1 THEN 'fa fa-lg fa-user u-success-text' 
+        WHEN 2 THEN 'fa fa-lg fa-user fam-x u-warning-text' 
+        WHEN 3 THEN 'fa fa-lg fa-user fam-x u-danger-text' 
+        ELSE 'fa fa-lg fa-user fam-pause '
+    end icon_class,
+    TO_CHAR(ID,'000') icon_html
+    FROM CLIENTES
+WHERE VENDEDOR_ID = NVL(:U_VENDEDOR_ID,VENDEDOR_ID)
+ORDER BY NOMBRE
+'''
+
 

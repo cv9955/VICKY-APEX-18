@@ -52,8 +52,19 @@
 	BEFORE_HEADER Page: 31	Restricted - May not be set from browser	Application	1	0	1	0
 
 ## U_VENDEDOR_ID
-	AFTER_LOGIN	Restricted - May not be set from browser	Global	1	0	0	0
+> CONTROL DE AUTORIZACION - ACCESO VENDEDOR
+- AFTER_LOGIN	
+- Restricted 
+- May not be set from browser	
+- Global
 
+### COMPUTATIONS
+- AFTER Authentication 
+- ACCESS CONTROL - VENDEDOR 
+```SQL
+SELECT ID FROM VENDEDORES 
+	WHERE APEXUSER = nvl(v('APP_USER'),USER)
+```
 ## VTA_CLIENTE_ID
 	Page: 520 530 540	Checksum Required - Session Level	Application	0	0	6	
 
@@ -101,26 +112,22 @@ END;
 ```
 
 ## ARTICULO SEARCH PAGE BRANCH
-	On Submit: After Page Submission - Before Computations and Validations
-'''sql
+> On Submit: After Page Submission - Before Computations and Validations
+```sql
 
-'''
-
+```
 
 ## BOBINA SEARCH PAGE BRANCH
-	On Submit: After Page Submission - Before Computations and Validations
-'''sql
+> On Submit: After Page Submission - Before Computations and Validations
+```sql
 
-'''
-
-
+```
 
 ## preparar_mapa
-	After Authentication
+> After Authentication
+```sql
 	APEX_COLLECTION.CREATE_OR_TRUNCATE_COLLECTION( p_collection_name => 'MAPAS'); ...
-'''sql
-
-'''
+```
 
 # APPLICATION COMPUTATIONS
 
@@ -145,5 +152,3 @@ END;
 ## PAGE_CLIENTE_TITLE
 	Before Header	SQL Query (return single value)	-
 
-## U_VENDEDOR_ID
-	After Authentication	SQL Query (return single value)	-
