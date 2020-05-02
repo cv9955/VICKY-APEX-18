@@ -1,5 +1,5 @@
 SELECT 
-'|' || TABLE_NAME || '|' || TRIGGER_NAME  || '|' || TRIGGER_TYPE  || '|' || TRIGGERING_EVENT  || '|'  c1
+'|' || TRIGGER_NAME || '|' || TABLE_NAME  || '|' || TRIGGER_TYPE  || '|' || TRIGGERING_EVENT  || '|'  c1
 
 FROM SYS.ALL_TRIGGERS
 
@@ -8,7 +8,7 @@ WHERE  TABLE_NAME IN (
   WHERE  TABLESPACE_NAME = 'VICKY'
   and TABLE_NAME > 'AQ'
   )
-  ORDER BY TABLE_NAME
+  ORDER BY TRIGGER_NAME
 ;
 
 select 

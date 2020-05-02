@@ -1,8 +1,7 @@
 # Paginas
+
 ## Main
 - 1 Menu Principal  >> LISTA_MENU_INICIO
-
-
 
 ## Clientes
 - 101 Buscar_Cliente 
@@ -18,8 +17,7 @@
   - 123 Cli_DFiscal_CC
   - 122 Cli_Cuentas_ABM
   - 124 Cli_Cuentas_CC
-- 115 CLIENTES_Grupos
-- 114 CLIENTES_informacion
+- 114 CLIENTES_informacion / grupos
   - 117 Cli_Contacto_ABM
   - 116 Cli_Deposito_ABM
   - 119 Cli_Grupos_ABM
