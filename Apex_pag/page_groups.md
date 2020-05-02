@@ -1,7 +1,9 @@
 # PAGES GROUP
 
-- 000 MAIN
-- 030 ARTICULOS
+## [000 MAIN](/000_main.md) 
+
+## [030 ARTICULOS](/030_articulos.md)
+
 - 100 CLIENTES
 - 200 PRODUCCION
 - 300 BOBINAS
