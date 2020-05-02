@@ -60,9 +60,9 @@
 # APPLICATION PROCESS
 
 ## CLIENTE SEARCH PAGE BRANCH
-	On Submit: After Page Submission - Before Computations and Validations
-	
-'''sql
+> On Submit: After Page Submission - Before Computations and Validations
+>> REQUEST = P0_SEARCH_CLIENTE	
+```SQL
 DECLARE
   l_url VARCHAR2(1000);
   p_cliente_id NUMBER;
@@ -98,7 +98,7 @@ BEGIN
         htp.init;
         apex_util.redirect_url(l_url);
 END;
-'''
+```
 
 ## ARTICULO SEARCH PAGE BRANCH
 	On Submit: After Page Submission - Before Computations and Validations
