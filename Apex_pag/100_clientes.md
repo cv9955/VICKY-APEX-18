@@ -37,9 +37,8 @@
 ### [106	VENDEDOR](#101)
 
 ## MENU
-* [CLIENTES] >>(#101)
-
-* [MAPA] >>(#103) 
+* [CLIENTES](#101)
+* [MAPA](#103) 
 
 
 ## TEMPLATES
@@ -47,10 +46,12 @@ HERO_CLIENTES
 
 ## GLOBAL ITEMS
 > G_CLIENTE_ID :   
+
 > PAGE_CLIENTE : Guarda ultima pagina para volver
+
 > PAGE_CLIENTE_ID
+
 > PAGE_CLIENTE_TITLE 
 
-# 101
-BUSCAR_CLIENTE
+# 101 BUSCAR_CLIENTE
 
