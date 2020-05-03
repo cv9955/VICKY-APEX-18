@@ -40,7 +40,9 @@
 	Page: 30	Checksum Required - Session Level	Application	0	0	1	0
 
 ## G_CLIENTE_ID
-	Page: 30 31 114 500 502 508 541	Checksum Required - Session Level	Application	0	0	7	1
+>> 	Page: 30 31 114 500 502 508 541
+	Checksum Required - Session Level	
+	Application	0	0	7	1
 
 ## P01_RETURN
 	-	Unrestricted	Application	0	0	0	0
@@ -53,6 +55,7 @@
 
 ## U_VENDEDOR_ID
 > CONTROL DE AUTORIZACION - ACCESO VENDEDOR
+>> 	Page: 101
 - AFTER_LOGIN	
 - Restricted 
 - May not be set from browser	
@@ -113,8 +116,41 @@ END;
 
 ## ARTICULO SEARCH PAGE BRANCH
 > On Submit: After Page Submission - Before Computations and Validations
-```sql
-
+>> REQUEST = P0_SEARCH_ARTICULO	
+```SQL
+DECLARE
+  l_url VARCHAR2(1000);
+  p_id NUMBER;
+  p_cantidad NUMBER; -- 1 VA DIRECTO A PAG CLIENTES 
+BEGIN
+ -- IS NUMERIC ??
+  IF LENGTH(TRIM(TRANSLATE(:P0_SEARCH_ARTICULO, '0123456789', ' '))) is null then 
+      SELECT count(1),max(id) into p_cantidad,p_id
+          FROM ARTICULOS where id = :P0_SEARCH_ARTICULO;
+  ELSE
+      SELECT count(1),max(id) into p_cantidad,p_id
+          FROM ARTICULOS 
+		  WHERE UPPER(CODIGO) LIKE UPPER('%&P0_SEARCH_ARTICULO.%');
+  END IF;
+  
+  IF p_cantidad = 1 then 
+          l_url := apex_page.get_url(p_application => :app_id,
+                             p_page        => 31,
+             				 p_request      => '',
+                             p_clear_cache => 31, 
+                             p_items       => 'P31_ID',
+                             p_values      => p_id ); 
+   else
+          l_url := apex_page.get_url(p_application => :app_id,
+                             p_page        => 102,
+             				 p_request      => '',
+                             p_clear_cache => 102, 
+                             p_items       => 'P102_SEARCH', 
+                             p_values      => :P0_SEARCH_ARTICULO) ;
+   end if ;
+        htp.init;
+        apex_util.redirect_url(l_url);
+END;
 ```
 
 ## BOBINA SEARCH PAGE BRANCH

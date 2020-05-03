@@ -26,6 +26,10 @@ function doSearchART() {
 	+$v('P0_SEARCH_ART');
  }    
     
+// 03/05/20 archivo reemplazado >> pagZero.js
+
+/*
+
     
 function enterPressed_ART(e){
 	var keycode;
@@ -43,7 +47,6 @@ function enterPressed_ART(e){
 
   
 function data_style() {
-
 	apex.jQuery("span[data-style]").each(
 		function(){
 			apex.jQuery(this).
@@ -52,8 +55,10 @@ function data_style() {
 	);	
 }	
 
+// aplicar atributo class a celda de interactive report
+// parent-class >> class 
+// REV 03/05/20 
 function apply_class_to_parent() {
-
 	apex.jQuery("span[parent-class]").each(
 		function(){
 			apex.jQuery(this).
@@ -70,3 +75,4 @@ function apply_class_to_parent() {
 	
 }	
 
+*/

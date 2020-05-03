@@ -1,3 +1,5 @@
+// 03/05/2020 ARCHIVIO REEMPLAZADO >> pagZero.js
+/*
 // move element to navbar
 function moveItem2Navbar(pItem) {
   var element = $('#P0_SEARCH_' + pItem).detach();
@@ -21,7 +23,9 @@ function fadeInItem(pItem, pWidth, pTime) {
   }, pTime);
 }
 
-// set inititial attributes
+
+// mueve celdas de busqueda al toolbar  
+// REV 03/05/20 >> se usa en PAGE ZERO
 function initSearchItem(pItem,pText) {
 	moveItem2Navbar(pItem);
 	$s('P0_SEARCH_' + pItem, pText);
@@ -40,3 +44,4 @@ function initSearchItem(pItem,pText) {
 }
 
 
+*/

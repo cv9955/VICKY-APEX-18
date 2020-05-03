@@ -1,5 +1,17 @@
 # VICKY2020
 
+## [Paginas Apex](/Apex_pag/readme.md)
+- 030 Articulos
+- 100 Clientes
+- 200 Produccion
+- 300 Bobinas
+- 400 Compras
+- 500 Ventas
+- 600 Contaduria
+- 800 Tools
+- 900 Listas
+
+
 ## Sql 
 - BOBINAS.sql
 - ARTICULOS
@@ -11,16 +23,7 @@
 - img
 
 ## Page Groups
-- Main
-- 10 Clientes
-- 100 Articulos
-- 200 Produccion
-- 300 Bobinas
-- 400 Compras
-- 500 Ventas
-- 600 Contaduria
-- 800 Tools
-- 900 Listas
+
 
 ## Shared Components
 ### LOVs
