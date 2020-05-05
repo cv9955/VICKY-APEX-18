@@ -43,7 +43,7 @@ c:\>impdp system/40**@192.168.2.99:1521/xepdb1 full=Y directory=DUMP_DIR dumpfil
 
 ## INSTALAR APEX
 C:\APEX_19.2\APEX>SQLPLUS /NOLOG
-> CONN / AS SYSDBA
+> CONN / AS SYSDBA  
 > ALTER SESSION SET CONTAINER=XEPDB1;
 
 > CREATE TABLESPACE APEX 
@@ -56,6 +56,9 @@ C:\APEX_19.2\APEX>SQLPLUS /NOLOG
 
 > @apex_rest_config.sql    >> 40
 
+
+> CONN / AS SYSDBA 
+> ALTER SESSION SET CONTAINER=XEPDB1;
 > @apex_epg_config.sql c:/apex_19.2
 
 ## Habilitar Puertos 
