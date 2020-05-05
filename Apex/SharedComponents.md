@@ -13,8 +13,14 @@
 	-	Restricted - May not be set from browser	Application	0	0	0	0
 
 ## A001_CTA
-	AFTER_LOGIN Page: 102	Restricted - May not be set from browser	Application	1	0	2	0
+	Restricted - May not be set from browser	
+	Application	
 
+* COMPUTATION 
+  - AFTER Authentication >> 1
+  - ARTICULO_SEARCH_PAGE_BRANCH (9999) >> 2 
+	
+	
 ## A001_PROVEDOR
 	Page: 402 408	Restricted - May not be set from browser	Application	0	0	2	0
 
@@ -34,24 +40,41 @@
 	-	Unrestricted	Application	0	0	0	0
 
 ## G_ARTICULO_ID
+> Mantiene ARTICULO_ID mientras cambia de pagina
+
 	Page: 30 31 32	Checksum Required - Session Level	Application	0	0	3	0
 
 ## G_ARTICULO_STATUS
 	Page: 30	Checksum Required - Session Level	Application	0	0	1	0
 
 ## G_CLIENTE_ID
->> 	Page: 30 31 114 500 502 508 541
-	Checksum Required - Session Level	
-	Application	0	0	7	1
+> Mantiene CLIENTE_ID mientras cambia de pagina
+- Page articulos: 30 31 32
+- Page Clientes : 100 101 107 108 109 111 114 123 124
+- Page Ventas   : 500 502 508 541
 
-## P01_RETURN
-	-	Unrestricted	Application	0	0	0	0
+## G_CLIENTE_TITLE
+- Page articulos: 30 31 32 33
+- Page Clientes : 100 101 107 108 109 111 114 123 124
+- Page Ventas   : 500 502 508 541
+- TEMPLATE HERO_CLIENTE
+
+* COMPUTATION 
+  - Before Header 100,107,108,109,111,114,30,31,32
+```SQL
+SELECT NOMBRE FROM CLIENTES
+ WHERE ID = :G_CLIENTE_ID
+```
 
 ## PAGE_CLIENTE
-	BEFORE_HEADER ON_NEW_INSTANCE	Checksum Required - Session Level	Application	2	0	0	0
+> pagina cliente activa
 
-## PAGE_CLIENTE_TITLE
-	BEFORE_HEADER Page: 31	Restricted - May not be set from browser	Application	1	0	1	0
+* COMPUTATION : 
+  - ON NEW INSTANCE 
+  > 101 
+  - BEFORE HEADER 100,107,108,109,111,114 
+  > :APP_PAGE_ID 
+
 
 ## U_VENDEDOR_ID
 > CONTROL DE AUTORIZACION - ACCESO VENDEDOR
@@ -173,18 +196,9 @@ END;
 ## A001_CLIENTE
 	After Submit	SQL Query (return single value)	-
 
-## A001_CTA
-	After Authentication	Static Assignment	-
 
 ## A001_USER
 	After Authentication	PL/SQL Expression	-
 
-## PAGE_CLIENTE
-	Before Header	PL/SQL Expression	-
 
-## PAGE_CLIENTE
-	On New Instance (new session)	Static Assignment	-
-
-## PAGE_CLIENTE_TITLE
-	Before Header	SQL Query (return single value)	-
 

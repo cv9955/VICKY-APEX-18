@@ -1,6 +1,8 @@
 # VICKY2020
 
-## [Paginas Apex](/Apex_pag/readme.md)
+## [Paginas Apex](Apex_pag/readme.md)
+
+## [Page Groups](Apex_pag/page_group.md)
 - 030 Articulos
 - 100 Clientes
 - 200 Produccion
@@ -12,20 +14,7 @@
 - 900 Listas
 
 
-## Sql 
-- BOBINAS.sql
-- ARTICULOS
-- CLIENTES
-- Vistas
-- Funciones
-- Procedures
-- Packages
-- img
-
-## Page Groups
-
-
-## Shared Components
+## [Shared Components](Apex/SharedComponents.md)
 ### LOVs
 - ARTICULO.TIPO
 - ART_GRUPO.TITLE
@@ -41,11 +30,26 @@
 ## Css Files
 
 ## Js Files
+- pagZero.js
+
 
 ## img
 - pagxxx.png
 - 
 
+
+
+
+
+## Sql 
+- BOBINAS.sql
+- ARTICULOS
+- CLIENTES
+- Vistas
+- Funciones
+- Procedures
+- Packages
+- img
 
 
 
