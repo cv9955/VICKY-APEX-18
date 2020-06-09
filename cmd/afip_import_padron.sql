@@ -1,0 +1,29 @@
+-- scrip sql afip_import_facturas
+
+BEGIN
+INSERT INTO CLI_IIBB (CUIT,DESDE,HASTA,VALOR)
+      SELECT 
+        T2.CUIT,
+        TO_DATE(T2.DESDE,'DDMMYYYY'),
+        TO_DATE(T2.HASTA,'DDMMYYYY'),
+        VALOR 
+      FROM PADRON_ARBA T2
+      WHERE EXISTS(
+        SELECT 1 
+        FROM CLI_DFISCAL T1 
+        WHERE T2.CUIT = REPLACE(T1.CUIT,'-','')
+      );
+COMMIT;
+
+EXCEPTION WHEN OTHERS THEN
+	ROLLBACK;
+	RAISE;
+
+END;
+/
+
+EXIT;
+/
+
+	
+	
