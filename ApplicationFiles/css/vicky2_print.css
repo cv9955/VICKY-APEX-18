@@ -1,0 +1,27 @@
+@media print{
+	.screenOnly{
+		display: none !important;}
+	
+	.t-Header{
+		display: none !important;}
+	
+    .t-Footer{
+        display:none!important;}	
+	
+	.t-Body-fullContent{
+		display: none !important;}
+	
+	.a-IRR-controlsContainer{
+		display: none !important;}
+
+	.a-IRR-toolbar{
+		display: none !important;}
+	
+	.a-DevToolbar{
+		display: none !important;}
+}  
+
+
+@media screen{
+	.printOnly {    display: none;   }  
+}
