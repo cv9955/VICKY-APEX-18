@@ -1,0 +1,31 @@
+# CUENTAS
+
+TABLAS
+
+- CUENTAS
+- CUENTA_TIPO
+
+- DOC_CAJAS
+  - CUENTA_In  >> ALTA X VTA_RECIBO
+  - CUENTA_out >> BAJA X PROV_PAGO
+  
+- DOC_CHEQUES
+  - CUENTA_In  >> ALTA X DEPOSITO (DOC_CUENTA_OUT)
+  
+- DOC_PROPIOS
+  - CUENTA_out >> BAJA X EMISION
+  
+- DOC_RETEN
+  - CUENTA_DEBE  >> RETVTA  >> P552
+  - CUENTA_HABER >> RETPAG  >> P
+- DOC_TIPO
+
+
+VISTAS
+- v0_docs
+
+- mov_cajas
+
+- p620_cheques
+- p450_cheques_cartera
+
